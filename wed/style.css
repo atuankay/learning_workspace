@@ -1,0 +1,100 @@
+.blush-l,
+.blush-r {
+    background-color: #ff8bb1;
+    height: 1em;
+    width: 1.37em;
+    border-radius: 50%;
+    position: absolute;
+    top: 4em;
+}
+.blush-l{
+    transform: rotate(25deg);
+    left: 1em;
+}
+.blush-r{
+    transform: rotate(25deg);
+    right: 1em;
+}
+.eye-l,
+.eye-r{
+    background-color: #3f3554;
+    height: 2.18em;
+    width: 2em;
+    border-radius: 2em;
+    position: absolute;
+    top: 2.18em;
+}
+.eye-l{
+    left: 1.37em;
+    transform: rotate(-20deg);
+}
+.eye-r{
+    right: 1.37em;
+    transform: rotate(20deg);
+}
+.eyeball-l,
+.eyeball-r{
+    height: 0.6em;
+    width: 0.6em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.6em;
+    top: 0.6em;
+    transition: 1s all;
+}
+.eyeball-l{
+    transform: rotate(20deg);
+}
+.eyeball-r{
+    transform: rotate(-20deg);
+}
+.nose{
+    height: 1em;
+    width: 1em;
+    background-color: #3f3554;
+    border-radius: 1.2em 0 0 0.25em;
+    position: absolute;
+    left: 0;
+    top: 4.37em;
+    right: 0;
+    transform: rotate(45deg);
+}
+.nose::before{
+    content: "";
+    position: absolute;
+    background-color: #3f3554;
+    height: 0.6em;
+    width: 0.1em;
+    transform: rotate(-45deg);
+    top: 0.75em;
+    left: 1em;
+}
+.mouth,
+.mouth::before{
+    height: 0.75em;
+    width: 0.93em;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0.18em #3f3554;
+}
+.mouth{
+    top: 5.31em;
+    left: 3.12em;
+}
+.mouth:before{
+    content: "";
+    position: absolute;
+    left: 0.87em;
+}
+.hand-l,
+.hand-r{
+    background-color: #3f3554;
+    height: 2.81em;
+    width: 2.5em;
+    border: 0.18em solid #2e0d30;
+    transition: 1s all;
+    position: absolute;
+    top: 8.4em;
+}
